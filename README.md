@@ -1,7 +1,7 @@
 # Learning-Bazel
 A repo documenting my learning and experimenting with the Bazel build system for C++
 
-## Generla Notes
+## General Notes
 
 - Need to run bazel commands from root of workspace - same level as `WORKSPACE` file (which you must create yourself at root of workspace)
 
