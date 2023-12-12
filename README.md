@@ -11,7 +11,7 @@ A repo documenting my learning and experimenting with the Bazel build system for
 ```
 @repo-name//package-name:target-name
 ```
-  For eg. `@tut1//examples/example1:first_eg`
+  For eg. `@Learning-Bazel//tut1/examples/example1:first_eg`
 ## Running a build
 
 - For example1:
