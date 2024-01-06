@@ -1,5 +1,11 @@
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
+# TWO IMPORTANT USES OF WORKSPACE FILE:
+# 1. 'Importing' external libraries like gtest, glog, absl, ...
+#    -> git_repository or on abseil site it also shows http_archive
+# 2. Using code libraries/repos not in current repository but still on your local machine
+#    -> new_local_repository
+
 git_repository(
     name = "com_google_googletest",
     #// Dec 27, 2021
