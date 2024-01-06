@@ -10,6 +10,16 @@
 #include "absl/flags/parse.h"
 #include "absl/flags/usage.h"
 
+
+
+/*
+When executing with bazel run, to pass flags need to add a '--' before writing the actual flags
+eg.
+bazel run src/main:main_flags_absl -- --verbose=true
+*/
+
+
+
 ABSL_FLAG(bool, verbose, false,
           "Include 'advanced' options in the menu listing");
 ABSL_FLAG(std::string, message, "Hello world!", "Message to print");
