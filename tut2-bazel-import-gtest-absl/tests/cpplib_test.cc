@@ -5,6 +5,16 @@
 
 #include "gtest/gtest.h"
 
+
+
+/*
+To run a test suite based on a BUILD file where you defined cc_test:
+
+bazel test tests:cpplib_test
+*/
+
+
+
 TEST(CPPLibTest, ReturnHelloWorld) {
   CPPLib cpplib;
   std::string actual = cpplib.PrintHelloWorld();

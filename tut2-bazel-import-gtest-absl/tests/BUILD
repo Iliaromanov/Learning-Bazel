@@ -1,5 +1,18 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_test")
 
+
+
+#
+# Could also create a bunch of .cc files as a test suite
+#  on the same dir level as this BUILD file, and use:
+# cc_test(
+#     name = "tests" # could be something else,
+#     srcs = glob(["**/*.cc"]) # this means compile all cc files under tests/
+#     deps = ...
+# )
+#
+
+
 cc_test(
     name = "cpplib_test",
     srcs = ["cpplib_test.cc"],
