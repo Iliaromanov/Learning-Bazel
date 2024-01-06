@@ -54,6 +54,7 @@ A repo documenting my learning and experimenting with the Bazel build system for
         tag = "20211102.0",
     )
     ```
+- To enable debugging on bazel run/build, need to add `-c dbg` at the end of command. Eg: `bazel run src/main:main -c dbg`
 ## Running a build
 
 - For example1:
